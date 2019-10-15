@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="558143bb-c993-42fa-98f0-31846d26ccc5" name="Default Changelist" comment="第一个idea上传git的项目">
+    <list default="true" id="558143bb-c993-42fa-98f0-31846d26ccc5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testMap.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/testMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            <state relative-caret-position="430">
+              <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,6 +141,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -157,7 +159,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -186,12 +187,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.testMap.ipTest">
+  <component name="RunManager" selected="JUnit.testMap.setTest">
     <configuration name="testMap.ipTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HashMapTest" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="testMap" />
       <option name="METHOD_NAME" value="ipTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testMap.setTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HashMapTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testMap" />
+      <option name="METHOD_NAME" value="setTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -209,6 +220,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.testMap.setTest" />
         <item itemvalue="JUnit.testMap.ipTest" />
         <item itemvalue="JUnit.testMap.test" />
       </list>
@@ -228,7 +240,8 @@
       <workItem from="1570679047714" duration="192000" />
       <workItem from="1570684053392" duration="4543000" />
       <workItem from="1570695604300" duration="1100000" />
-      <workItem from="1571020796910" duration="710000" />
+      <workItem from="1571020796910" duration="1179000" />
+      <workItem from="1571118612746" duration="1216000" />
     </task>
     <task id="LOCAL-00001" summary="第一个idea上传git的项目">
       <created>1571021026656</created>
@@ -237,48 +250,56 @@
       <option name="project" value="LOCAL" />
       <updated>1571021026656</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="第一个idea上传git的项目">
+      <created>1571021534643</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1571021534643</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="testMap_test - 2019.10.10 at 13h 37m 26s.xml">
-      <configuration name="testMap.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testMap_ipTest - 2019.10.10 at 16h 22m 40s.xml">
-      <configuration name="testMap.ipTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testMap_ipTest - 2019.10.10 at 16h 22m 51s.xml">
-      <configuration name="testMap.ipTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testMap_ipTest - 2019.10.10 at 16h 22m 56s.xml">
-      <configuration name="testMap.ipTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testMap_ipTest - 2019.10.10 at 16h 22m 59s.xml">
-      <configuration name="testMap.ipTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testMap_ipTest - 2019.10.10 at 16h 24m 05s.xml">
-      <configuration name="testMap.ipTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testMap_ipTest - 2019.10.10 at 16h 27m 25s.xml">
-      <configuration name="testMap.ipTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testMap_ipTest - 2019.10.10 at 16h 27m 27s.xml">
-      <configuration name="testMap.ipTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="testMap_ipTest - 2019.10.10 at 16h 28m 09s.xml">
       <configuration name="testMap.ipTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="testMap_ipTest - 2019.10.10 at 16h 28m 26s.xml">
       <configuration name="testMap.ipTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="testMap_setTest - 2019.10.15 at 13h 56m 41s.xml">
+      <configuration name="testMap.setTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testMap_setTest - 2019.10.15 at 13h 57m 36s.xml">
+      <configuration name="testMap.setTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testMap_setTest - 2019.10.15 at 13h 57m 49s.xml">
+      <configuration name="testMap.setTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testMap_setTest - 2019.10.15 at 13h 58m 39s.xml">
+      <configuration name="testMap.setTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testMap_setTest - 2019.10.15 at 13h 59m 46s.xml">
+      <configuration name="testMap.setTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testMap_setTest - 2019.10.15 at 14h 03m 58s.xml">
+      <configuration name="testMap.setTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testMap_setTest - 2019.10.15 at 14h 05m 00s.xml">
+      <configuration name="testMap.setTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testMap_setTest - 2019.10.15 at 14h 05m 46s.xml">
+      <configuration name="testMap.setTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7967000" />
+    <option name="totallyTimeSpent" value="9652000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18443497" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18656716" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -288,7 +309,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26327193" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2624729" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2665222" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -361,8 +382,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/testMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        <state relative-caret-position="430">
+          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

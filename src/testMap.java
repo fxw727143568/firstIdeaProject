@@ -5,7 +5,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 
 public class testMap {
 
@@ -41,6 +43,28 @@ public class testMap {
             System.out.println(ip);
         }
 
+    }
+
+    @Test
+    public void setTest() throws UnknownHostException {
+
+        Long begin = System.currentTimeMillis();
+        ArrayList<String> arrayList = new ArrayList<>(20000000);
+        //HashSet<String> hashSet = new HashSet<>(20000000);
+        for(int i=0;i<20000000;i++){
+            //arrayList.add("list"+i);
+            arrayList.add("list"+i);
+        }
+        int size = arrayList.size();
+        System.out.println("运行时间:"+(System.currentTimeMillis()-begin));
+
+        Long begin1 = System.currentTimeMillis();
+        for (int i=0;i<=size;i++){
+            if(arrayList.contains("list10000000")){
+                break;
+            }
+        }
+        System.out.println("运行时间1:"+(System.currentTimeMillis()-begin1));
     }
 
 }
