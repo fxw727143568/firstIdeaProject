@@ -50,7 +50,7 @@ public class testMap {
 
         Long begin = System.currentTimeMillis();
         ArrayList<String> arrayList = new ArrayList<>(20000000);
-        //HashSet<String> hashSet = new HashSet<>(20000000);
+        HashSet<String> hashSet = new HashSet<>(20000000);
         for(int i=0;i<20000000;i++){
             //arrayList.add("list"+i);
             arrayList.add("list"+i);
