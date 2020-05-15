@@ -5,13 +5,48 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+import java.time.DayOfWeek;
+import java.time.Duration;
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 
-public class testMap {
+public class testMap implements Runnable{
 
-    @Test
+    int b = 100;
+
+    synchronized void m1() throws Exception{
+        b = 1000;
+        Thread.sleep(500);
+        System.out.println("b="+b);
+    }
+
+    synchronized void m2() throws Exception{
+        Thread.sleep(250);
+        b=2000;
+    }
+
+    public static void main(String[] args) throws Exception{
+        testMap tt = new testMap();
+        Thread t = new Thread(tt);
+        t.start();
+
+        tt.m2();
+        System.out.println("main thread b="+tt.b);
+    }
+
+    @Override
+    public void run() {
+        try {
+            m1();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+   @Test
     public void test() throws Exception {
         HashMap<String,String> map = new HashMap<>(3);
         map.put("11","22");
@@ -36,15 +71,32 @@ public class testMap {
 
     }
 
+
     @Test
-    public void ipTest() throws UnknownHostException {
-        InetAddress[] address = InetAddress.getAllByName("www.taobao.com");
-        for(InetAddress ip : address){
-            System.out.println(ip);
+    public void ipTest() {
+       /*Double d = 0.0d;
+       System.out.println(String.format("%.1f",d));
+       LocalTime a = LocalTime.now();
+       LocalTime b = LocalTime.now().plusHours(-1);*/
+      /* d = Double.valueOf((Duration.between(b, a).getSeconds())/3600d);
+       System.out.println(String.format("%.1f",d));*/
+        LocalDate a = LocalDate.now().plusDays(4);
+        LocalDate b = LocalDate.now();
+        int c = LocalTime.now().toSecondOfDay();
+        int k = 1024 * 1024 * 8;
+        ArrayList<byte[]> arrayList = new ArrayList<>();
+        for(int i=0;i<k;i++){
+            System.out.println("111");
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            arrayList.add(new byte[k]);
         }
 
     }
-
+/*
     @Test
     public void setTest() throws UnknownHostException {
 
@@ -65,6 +117,6 @@ public class testMap {
             }
         }
         System.out.println("运行时间1:"+(System.currentTimeMillis()-begin1));
-    }
+    }*/
 
 }
